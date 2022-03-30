@@ -4,10 +4,10 @@
 
 .container img {
   position: absolute;
-  margin: auto;
+  
   filter: brightness(45%);
   width: 100%;
-  height: 800px;
+  height: 700px;
   z-index: 1;
   
 }
@@ -79,44 +79,57 @@
   
 }
 
-// .navigation ul {
-//   list-style-type: none;
-//   color: #c2b280;
-//   padding: 0;
-//   margin: 0;     
-// }
-
-// .navigation ul li {
-//   display: inline-block;
-//   margin-right: 50px;
-//   position: relative;  
-// }
-
-
 .header-title {
   
   position: relative;
   text-align: center;
   font-size: 30px;
-  padding-top: 200px;
+  padding-top: 80px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 900;
-
+  font-weight: 800;
+  
   .row-one {
-    margin-bottom: -50px;
+     margin-bottom: -50px;
+    padding-right: 450px;
     font-weight: 700;
     color: #c2b280;
-
+    letter-spacing: 4px;
   }
 
   .row-two {
-    margin-bottom: 100px;
+    z-index: 10;
     font-weight: 700;
     color: #c2b280;
+    
+    margin-left: 60px;
+    letter-spacing: 4px;
   }
 }
-
-.button-title {
-  color: #cfff;
-  letter-spacing: 5px;
+  
+.header-line { 
+  border: solid;
+  color: #c2b280;
+  background-color: #c2b280;
+  height: 7px;
+  width: 20%;
 }
+
+.button h3 h1 {
+  margin-bottom: 20px;
+  z-index: 50;
+  padding-bottom: 15px;
+
+}
+
+.button .button-title {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 25px;
+  
+}
+
+.button i {
+  color: #fff;
+  font-size: 25px;
+}
+
