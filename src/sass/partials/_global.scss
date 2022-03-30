@@ -1,3 +1,19 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+.container {
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1800px;
+  height: 800px;
+}
+

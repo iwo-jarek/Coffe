@@ -2,118 +2,88 @@
   box-sizing: border-box;
 }
 
-header {
-  position: relative;
-  max-width: 100%;
-  padding: 10px;
+.container img {
+  position: absolute;
+  margin: auto;
+  filter: brightness(45%);
+  width: 100%;
+  height: 800px;
+  z-index: 1;
+  
 }
 
 .header-wrapper {
   position: relative;
-  padding-bottom: 100px;
-  z-index: 10;
+  z-index: 2;
+  width: 100%;
+  margin-right: 30px;
+  
 }
 
-.header-image {
-  position: absolute;
-  height: 120px;
-  filter: opacity(87%);
-  z-index: 1;
-}
 
 .header-logo {
-  display: inline;
-  //justify-content: space-between;
+  display: flex;
   line-height: 20px;
   color: #fff;
 }
 
 .logo__title {
   font-size: 20px;
-  padding-top: 30px;
-  margin-left: 300px;
+  padding-top: 50px;
+  margin-left: 200px;
+  letter-spacing: 5px;
+  word-spacing: 1px;
 }
 
 .logo__subtitle {
-  font-size: 15px;
-  margin-left: 0px;
-  margin-left: 300px;
+  font-size: 12px;
+
+  margin-left: 200px;
+  letter-spacing: 5px;
+  word-spacing: 1px;
+  
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.navigation .container ul {
+.navigation ul {
   list-style-type: none;
   text-align: right;
-  padding-left: 70px;
+  
+  font-family: 'Source Sans Pro', sans-serif;
   //line-height: 20px;   
 }
 
-.navigation .container ul li {
+.navigation ul li {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #c2b280;
+  z-index: 10;
+}
+
+.navigation ul {
+  list-style-type: none;
+  color: #c2b280;
+  padding: 0;
+  margin: 0;     
+}
+
+.navigation ul li {
   display: inline-block;
   margin-right: 36px;
   position: relative;  
-  
 }
 
 .navigation .container ul li a {
   text-decoration: none;
-  color:  #c2b280;
-  z-index: 10;
 }
 
 .header-title {
-  color:  #c2b280;
+  color: #c2b280;
+  position: relative;
+  text-align: center;
 }
-
-
-// .header-logo {
-//   display: inline;
-//   color: #fff;
-//   margin-left: 50px;
-// }
-
-// .main-nav {
-//   position: relative;
-//   text-decoration: none;
-// }
-
-// ul {
-  
-  
-//}
-
-
-
-// .header-image {
-//   position: absolute; 
-//   height: 150px;
-
-// }
-
-// header {
-//   position: relative;
-// }
-
-// .header-wrapper {
-//   position: relative;
-//   z-index: 10;
-// } 
-//   .header-logo {
-//     padding-left: 36px;
-//     color: #fff;
-//     display: inline;
-//     width: 100%;
-//     z-index: 50px;
-  
-
-//     ul {
-//       text-decoration: none;
-//       color:#fff
-//     }
-//   }
-
-//   .main-nav {
-//     text-decoration: none;
-//   }
-
-
-

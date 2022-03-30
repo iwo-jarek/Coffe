@@ -11,10 +11,11 @@
 @import "bootstrap/_grid";
 @import "bootstrap/_images";
 
-@import "partials/_about";
-@import "partials/_global";
-@import "partials/_header.scss";
-@import "partials/_typography";
-@import "partials/_settings";
-@import "partials/_products";
+@import "partials/about";
+@import "partials/global";
+@import "partials/header";
+@import "partials/typography";
+@import "partials/settings";
+@import "partials/products";
+@import "partials/media-query";
 
