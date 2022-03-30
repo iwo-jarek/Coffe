@@ -16,13 +16,13 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  margin-right: 30px;
-  
+
 }
 
-
 .header-logo {
-  display: flex;
+  display: inline;
+  
+  
   line-height: 20px;
   color: #fff;
 }
@@ -33,57 +33,90 @@
   margin-left: 200px;
   letter-spacing: 5px;
   word-spacing: 1px;
+  font-weight: bolder;
 }
 
 .logo__subtitle {
-  font-size: 12px;
+  font-size: 10px;
 
   margin-left: 200px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   word-spacing: 1px;
-  
+  font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navigation {
+  margin-top: -30px;
+  margin-right: 70px;
+  padding-right: 0;
+
 }
 
 .navigation ul {
   list-style-type: none;
   text-align: right;
-  
+  letter-spacing: 2px;
   font-family: 'Source Sans Pro', sans-serif;
-  //line-height: 20px;   
+  font-weight: bold;
+  
+  line-height: 20px;   
 }
 
 .navigation ul li {
   display: inline-block;
-  position: relative;
+  margin-right: 120px;
+  margin-left: -50px;
+  
+ 
   
 }
 
 .navigation ul li a {
   text-decoration: none;
   color: #c2b280;
-  z-index: 10;
+  z-index: 20;
+  
 }
 
-.navigation ul {
-  list-style-type: none;
-  color: #c2b280;
-  padding: 0;
-  margin: 0;     
-}
+// .navigation ul {
+//   list-style-type: none;
+//   color: #c2b280;
+//   padding: 0;
+//   margin: 0;     
+// }
 
-.navigation ul li {
-  display: inline-block;
-  margin-right: 36px;
-  position: relative;  
-}
+// .navigation ul li {
+//   display: inline-block;
+//   margin-right: 50px;
+//   position: relative;  
+// }
 
-.navigation .container ul li a {
-  text-decoration: none;
-}
 
 .header-title {
-  color: #c2b280;
+  
   position: relative;
   text-align: center;
+  font-size: 30px;
+  padding-top: 200px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+
+  .row-one {
+    margin-bottom: -50px;
+    font-weight: 700;
+    color: #c2b280;
+
+  }
+
+  .row-two {
+    margin-bottom: 100px;
+    font-weight: 700;
+    color: #c2b280;
+  }
+}
+
+.button-title {
+  color: #cfff;
+  letter-spacing: 5px;
 }
