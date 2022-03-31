@@ -89,7 +89,7 @@
   font-weight: 800;
   
   .row-one {
-     margin-bottom: -50px;
+    margin-bottom: -50px;
     padding-right: 450px;
     font-weight: 700;
     color: #c2b280;
@@ -106,7 +106,8 @@
   }
 }
   
-.header-line { 
+.header-line {
+  align-items: center;
   border: solid;
   color: #c2b280;
   background-color: #c2b280;
