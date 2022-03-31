@@ -35,34 +35,37 @@
 }
 
 .skill-container {
+  position: relative;
   padding: 50px;
   margin: 20px;
+  
 }
 
 .skill-image {
   position: absolute;
   width: 50%;
-  height: 100%;
+  height: 80%;
   
 }
 
 .skill-image img {
+  position: relative;
   width: 70%;
   height: 70%;
   object-fit: cover;
 
 }
 
-// .skill-right .skill-image {
-//   left: 0;
-// }
+.skill-left .skill-image {
+  display: flex;
+  float: left;
+}
+.skill-right .skill-description {
+  padding: 36px;
+  text-align: left;
+}
 
-// .skill-left .skill-description {
-//   padding: 36px 55% 36px 0;
-//   text-align: right;
-// }
-
-// .skill-right .skill-description {
-//   padding: 36px 0 36px 55%;
-//   text-align: left;
-// }
+.skill-right .skill-image {
+  display: flex;
+  float: right;
+}
