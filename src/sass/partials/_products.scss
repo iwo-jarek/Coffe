@@ -16,17 +16,17 @@
 }  
 
 .products-title h1 {
-  color: #c2b280;
+  color: #b49f82;
   font-size: 40px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   letter-spacing: 5px;
-  border-color: #c2b280;
+  border-color: #b49f82;
 }
 
 .products-line {
   position: relative;
-  background-color: #c2b280;
+  background-color: #b49f82;
   height: 4px;
   width: 30%;
   margin-top: -20px;
@@ -46,6 +46,8 @@
   width: 50%;
   height: 80%;
   
+  
+  
 }
 
 .skill-image img {
@@ -53,17 +55,33 @@
   width: 70%;
   height: 70%;
   object-fit: cover;
+  box-shadow: 0 0 20px 10px #9f9d9d;
+  margin-top: 15px;
+
 
 }
+
 
 .skill-left .skill-image {
   display: flex;
   float: left;
+  margin: 20px 0;
 }
 
 .skill-right .skill-description {
   padding: 36px;
   text-align: left;
+  width: 70%;
+  height: 70%;
+  margin: -70px 0;
+}
+
+
+.skill-left .description {
+  padding: 36px;
+  width: 70%;
+  height: 70%;
+  margin: 70px 0;
 }
 
 .skill-right .skill-image {

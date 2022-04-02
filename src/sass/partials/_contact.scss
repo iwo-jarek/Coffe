@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.contact-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px;
+  margin: 5% auto 5% auto;
+}
+
+
+form {
+  display: flex;
+  flex-flow: column;
+
+  P {
+    margin-top: 6px;
+  } 
+}
+
+input {
+  margin-bottom: 6px;
+}
+
+.btn {
+  background-color: #b49f82;
+  margin: 15px;
+  color: #fff;
+  border-radius: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+form > * {
+  padding: 5px;
+  text-align: center;
+}
