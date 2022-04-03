@@ -7,7 +7,7 @@
 .container img {
   position: absolute;
   filter: brightness(45%);
-  width: 90%;
+  width: 97%;
   height: 700px;
   z-index: 1;
   left: 0;
@@ -26,7 +26,8 @@
 
 .header-logo {
   display: flex;
-
+  justify-content: space-between;
+  align-items: flex-end;
 
   line-height: 20px;
   color: #fff;
@@ -52,29 +53,28 @@
 }
 
 .navigation {
-  margin-top: -30px;
-  margin-right: 70px;
-  padding-right: 0;
+  padding-right: 30px;
 
+}
+
+.navigation-container{
+  width: 40%;
+  display: flex;
 }
 
 .navigation ul {
   list-style-type: none;
-  text-align: right;
   letter-spacing: 2px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-
+  margin-left: auto;
+  margin-right: 120px;
   line-height: 20px;
+  word-spacing: 10px;
 }
 
 .navigation ul li {
   display: inline-block;
-  margin-right: 120px;
-  margin-left: -50px;
-
-
-
 }
 
 .navigation ul li a {
@@ -119,10 +119,7 @@
   width: 15%;
   left: 50%;
   transform: translateX(-50%);
-
-
 }
-
 
 .button .button-title {
   position: relative;

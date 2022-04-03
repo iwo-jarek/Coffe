@@ -2,8 +2,6 @@
 @import "_normalize";
 
 // Bootstrap
-
-
 @import "bootstrap/_functions";
 @import "bootstrap/_variables";
 @import "bootstrap/_mixins";
@@ -11,6 +9,7 @@
 @import "bootstrap/_grid";
 @import "bootstrap/_images";
 
+// Partials
 @import "partials/about";
 @import "partials/global";
 @import "partials/header";

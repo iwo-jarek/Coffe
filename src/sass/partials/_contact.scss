@@ -4,8 +4,9 @@
 
 .contact-wrapper {
   position: relative;
+  // display: none;
   width: 80%;
-  max-width: 700px;
+  height: 200px;
   display: flex;
   flex-flow: column;
   align-items: center;

@@ -5,7 +5,7 @@
         "name": "LA LAGARTIJA",
         "roasting": "5/10",
         "intensity": "6/10",
-        "description": "Mysterious and treacherous... The best choice for the start of your journey! it will prodive you a rich delicious",
+        "description": "Mysterious and treacherous... The best choice for the start of your journey! it will prodive you a rich delicious flavor.",
         "images": [
           "<img src=\"/images/coffee-1.png\">"
         ]
@@ -15,7 +15,7 @@
         "name": "EL TIGRE",
         "roasting": "8/10",
         "intensity": "9/10",
-        "description": "Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel",
+        "description": "Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
         "images": [
           "<img src=\"images/coffee-2.png\">"
         ]
