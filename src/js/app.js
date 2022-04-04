@@ -1,7 +1,10 @@
 import { settings } from './settings.js';
+// import Home from './components/Home.js';
+// import Product from './components/Product.js';
+
 const app = {
   initData: function () {
-    const url = settings.db.url + '/' + settings.db.products;
+    const url = settings.db.url + '/' + settings.db.product;
     this.data = {};
     fetch(url)
       .then((rawResponse) => {
