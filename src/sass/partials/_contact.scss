@@ -4,16 +4,45 @@
 
 .contact-wrapper {
   position: relative;
-  // display: none;
+  display: none;
   width: 80%;
   height: 200px;
-  display: flex;
   flex-flow: column;
   align-items: center;
   padding: 20px;
   margin: 5% auto 5% auto;
 }
 
+.active {
+  display: flex;
+}
+
+.wrapper-title {
+  display: flex;
+  justify-content: center;
+  color: #b49f82;
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+  
+  z-index: 7;
+
+}
+
+.wrapper-title-line {
+  display: flex;
+  position: relative;
+  border: solid;
+  z-index: 20;
+  // justify-content: center;
+  color: #b49f82;
+  height: 3px;
+  width: 50%;
+  // left: 50%;
+  // transform: translateX(-50%);
+  margin-top: -15px;
+}
 
 form {
   display: flex;
@@ -25,12 +54,14 @@ form {
 }
 
 input {
-  margin-bottom: 6px;
+  margin-top: -6px;
+  border: solid;
+
 }
 
 .btn {
   background-color: #b49f82;
-  margin: 15px;
+  margin: 25px;
   color: #fff;
   border-radius: 0;
   font-family: 'Source Sans Pro', sans-serif;

@@ -38,53 +38,132 @@
   position: relative;
   padding: 50px;
   margin: 20px;
-  
 }
+
 
 .skill-image {
   position: absolute;
   width: 50%;
-  height: 80%;
-  
-  
-  
+  height: 100%;
+  // overflow: hidden;
 }
 
 .skill-image img {
-  position: relative;
   width: 70%;
   height: 70%;
-  object-fit: cover;
-  box-shadow: 0 0 20px 10px #9f9d9d;
   margin-top: 15px;
-
-
-}
-
-
-.skill-left .skill-image {
-  display: flex;
-  float: left;
-  margin: 20px 0;
-}
-
-.skill-right .skill-description {
-  padding: 36px;
-  text-align: left;
-  width: 70%;
-  height: 70%;
-  margin: -70px 0;
-}
-
-
-.skill-left .description {
-  padding: 36px;
-  width: 70%;
-  height: 70%;
-  margin: 70px 0;
+  margin-left: 15px;
+  box-shadow: 0 0 20px 10px #9f9d9d;
+  object-fit: cover;
 }
 
 .skill-right .skill-image {
   display: flex;
   float: right;
+  justify-content: center;
 }
+
+.skill-text {
+  display: flex;
+}
+
+.skill-line {
+  background-color: $color-main;
+  margin-top: 8px;
+  margin-right: 7px;
+  height: 5px;
+  width: 15%;
+}
+
+.skill-right .skill-description {
+  padding: 36px 55% 36px 0;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.skill-quality {
+  display: flex;
+
+  p span {  
+    font-weight: 800;
+  }
+}
+
+.skill-quality .col-sm-4 {
+  margin-left: 120px;
+}
+
+.skill-left .skill-image {
+  display: flex;
+  float: left;
+  margin-top: 20px;
+}
+
+.skill-left-quality {
+  display: flex;
+  margin-left: 0;
+  p span {  
+    font-weight: 800;
+  }
+}
+.skill-left .skill-left-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.skill-left-text {
+  display: flex;
+  margin-right: 15px;
+}
+
+.skill-left-line {
+  background-color: $color-main;
+  margin-top: 8px;
+  // margin-right: 7px;
+  height: 5px;
+  width: 20%;
+  // left: 50%;
+  transform: translateX(-50%);
+}
+
+
+// .skill-image {
+//   position: absolute;
+//   width: 50%;
+//   height: 50%;
+// }
+
+// .skill-image img {
+//   position: relative;
+//   width: 70%;
+//   height: 70%;
+//   object-fit: cover;
+//   box-shadow: 0 0 20px 10px #9f9d9d;
+//   margin-top: 15px;
+// }
+
+// .skill-left .skill-image {
+//   display: flex;
+//   float: right;
+// }
+
+// .skill-right .skill-description {
+//   padding: 36px;
+//   text-align: left;
+//   width: 70%;
+//   height: 60%; 
+// }
+
+// .skill-left .description {
+//   padding: 36px;
+//   width: 70%;
+//   height: 70%;
+//   //margin: 70px 0;
+// }
+
+// .skill-right .skill-image {
+//   display: flex;
+//   float: left;
+// }
+

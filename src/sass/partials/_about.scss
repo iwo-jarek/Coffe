@@ -29,13 +29,14 @@
 }
 
 .about-title h1 {
-  color: #c2b280;
+  margin-top: 40px;
+ 
   font-size: 40px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   letter-spacing: 5px;
-  border-color: #b49f82;
-  z-index: 30;
+  color: #b49f82;
+  z-index: 7;
 
 }
 
@@ -52,6 +53,32 @@
 }
 
 .about-description {
-  color: #fff;
-  z-index: 10;
+  display: flex;
+  color: $color-light;
+  flex-direction: column;
+  font-family: $font-family;
+  z-index: 50;
+  height: 70px;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+  // letter-spacing: 1px;
+  word-spacing: 3px;
+  
+  h4 {
+    text-align: center;
+    //color: $color-light;
+    z-index: 120;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  h3 {
+    margin-top: 15px;
+    z-index: 120;
+    text-align: end;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
 }
