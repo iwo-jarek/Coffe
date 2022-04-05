@@ -3,13 +3,13 @@ export const select = {
   containerOf: {
     pages: '#pages',
     products: 'products-wrapper',
-    contact: 'contact-wrapper',
+    about: 'about-wrapper',
+    home: 'pages',
   },
 
-  // home: {
-  //   order: '.order-online',
-  //   book: '.book-table',
-  // },
+  home: {
+    
+  },
 
   nav: {
     links: '.main-nav a',

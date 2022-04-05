@@ -21,17 +21,17 @@
 }  
 
 .products-title h1 {
-  color: #b49f82;
+  color: $color-main;
   font-size: 40px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   letter-spacing: 5px;
-  border-color: #b49f82;
+  border-color: $color-main;
 }
 
 .products-line {
   position: relative;
-  background-color: #b49f82;
+  background-color: $color-main;
   height: 4px;
   width: 30%;
   margin-top: -20px;
@@ -127,50 +127,7 @@
 .skill-left-line {
   background-color: $color-main;
   margin-top: 8px;
-  // margin-right: 7px;
+  margin-right: 6px;
   height: 5px;
   width: 20%;
-  // left: 50%;
-  transform: translateX(-50%);
 }
-
-
-// .skill-image {
-//   position: absolute;
-//   width: 50%;
-//   height: 50%;
-// }
-
-// .skill-image img {
-//   position: relative;
-//   width: 70%;
-//   height: 70%;
-//   object-fit: cover;
-//   box-shadow: 0 0 20px 10px #9f9d9d;
-//   margin-top: 15px;
-// }
-
-// .skill-left .skill-image {
-//   display: flex;
-//   float: right;
-// }
-
-// .skill-right .skill-description {
-//   padding: 36px;
-//   text-align: left;
-//   width: 70%;
-//   height: 60%; 
-// }
-
-// .skill-left .description {
-//   padding: 36px;
-//   width: 70%;
-//   height: 70%;
-//   //margin: 70px 0;
-// }
-
-// .skill-right .skill-image {
-//   display: flex;
-//   float: left;
-// }
-
