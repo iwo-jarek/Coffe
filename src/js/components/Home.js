@@ -4,16 +4,14 @@ class Home {
   constructor(element) {
     const thisHome = this;
     thisHome.render(element);
-    this.initWidget();
+    thisHome.initWidget();
     thisHome.initLink();
   }
 
   render(element) {
     const thisHome = this;
-    //const generatedHTML = templates.home();
     thisHome.dom = {};
     thisHome.dom.wrapper = element;
-    //thisHome.dom.wrapper.innerHTML = generatedHTML;
   }
 
   clickedPage(pageId) {

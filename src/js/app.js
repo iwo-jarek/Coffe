@@ -55,7 +55,7 @@ const app = {
   },
 
   initData: function () {
-    const url = settings.db.url + '/' + settings.db.products;
+    const url = settings.db.url + '/';
     this.data = {};
     fetch(url)
       .then((rawResponse) => {
@@ -79,12 +79,12 @@ const app = {
     }
   },
 
-  initHome: function () {
-    const thisApp = this;
+  // initHome: function () {
+  //   const thisApp = this;
 
-    const homeWidget = document.querySelector(select.containerOf.home);
-    thisApp.booking = new Home(homeWidget);
-  },
+  //   const homeWidget = document.querySelector(select.containerOf.home);
+  //   thisApp.Home= new Home(homeWidget);
+  // },
 };
 
 app.init(); 
