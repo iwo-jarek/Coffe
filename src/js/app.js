@@ -36,29 +36,30 @@ const app = {
         window.location.hash = '#' + id;
       });
     }
+    thisApp.activatePage('home');
   },
 
   activatePage: function (pageId) {
     const thisApp = this;
     let pagesToShow = [];
-    if(pageId === 'home'){
+    if (pageId === 'home') {
       pagesToShow = activatePage.home;
-    } 
-    else if (pageId === 'products'){
+    }
+    else if (pageId === 'products') {
       pagesToShow = activatePage.products;
     }
-    else if (pageId === 'contact'){
+    else if (pageId === 'contact') {
       pagesToShow = activatePage.contact;
     }
 
-    for(let page of thisApp.pages){
-      if(pagesToShow.includes(page.id)){
+    for (let page of thisApp.pages) {
+      if (pagesToShow.includes(page.id)) {
         page.classList.remove('hidden');
       }
       else {
         page.classList.add('hidden');
       }
-      
+
     }
   },
 
@@ -86,7 +87,7 @@ const app = {
     const thisApp = this;
 
     const homeWidget = document.querySelector(select.containerOf.home);
-    thisApp.Home= new Home(homeWidget);
+    thisApp.Home = new Home(homeWidget);
   },
 };
 
