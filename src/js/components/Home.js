@@ -4,8 +4,6 @@ class Home {
   constructor(element) {
     const thisHome = this;
     thisHome.render(element);
-    thisHome.initWidget();
-    thisHome.initLink();
   }
 
   render(element) {
@@ -29,5 +27,6 @@ class Home {
       }
     }
   }
+  
 }
 export default Home;

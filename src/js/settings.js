@@ -4,11 +4,7 @@ export const select = {
     pages: '#pages',
     products: 'products-wrapper',
     about: 'about-wrapper',
-    home: 'pages',
-  },
-
-  home: {
-    
+    home: '#home',
   },
 
   nav: {
@@ -25,12 +21,15 @@ export const classNames = {
   }
 };
 
-export const settings = {
+export const activatePage = {
+  home: ['products-page', 'about-us-page'],
+  products : ['products-page'],
+  contact: ['contact-page']
+};
 
+export const settings = {
   db: {
-    url: '//' + window.location.hostname + (window.location.hostname == 'localhost' ? ':3131' : ''),
-    products: 'products',
-    
+    url: '//' + window.location.hostname + (window.location.hostname == 'localhost' ? ':3131' : ''),  
   },
 
 };

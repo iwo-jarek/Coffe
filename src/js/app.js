@@ -1,4 +1,4 @@
-import { settings, classNames, select } from './settings.js';
+import { settings, select, activatePage } from './settings.js';
 import Home from './components/Home.js';
 // import Product from './components/Product.js';
 
@@ -10,8 +10,9 @@ const app = {
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
+
     const idFromHash = window.location.hash.replace('#/', '');
-    console.log('id FromHash', idFromHash);
+
     let pageMatchingHash = thisApp.pages[0].id;
 
     for (let page of thisApp.pages) {
@@ -20,7 +21,6 @@ const app = {
         break;
       }
     }
-
     thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
@@ -33,24 +33,32 @@ const app = {
         /* run thisApp.activatePage with that id */
         thisApp.activatePage(id);
         /* change URL hash */
-        window.location.hash = '#/' + id;
+        window.location.hash = '#' + id;
       });
     }
   },
 
   activatePage: function (pageId) {
     const thisApp = this;
-
-    /* add class "active" to matching pages, remove from non-matching */
-    for (let page of thisApp.pages) {
-      page.classList.toggle(classNames.pages.active, page.id == pageId);
+    let pagesToShow = [];
+    if(pageId === 'home'){
+      pagesToShow = activatePage.home;
+    } 
+    else if (pageId === 'products'){
+      pagesToShow = activatePage.products;
     }
-    /* add class "active" to matching links, remove from non-matching */
-    for (let link of thisApp.navLinks) {
-      link.classList.toggle(
-        classNames.nav.active,
-        link.getAttribute('href') == '#/' + pageId
-      );
+    else if (pageId === 'contact'){
+      pagesToShow = activatePage.contact;
+    }
+
+    for(let page of thisApp.pages){
+      if(pagesToShow.includes(page.id)){
+        page.classList.remove('hidden');
+      }
+      else {
+        page.classList.add('hidden');
+      }
+      
     }
   },
 
@@ -69,22 +77,17 @@ const app = {
   init: function () {
     const thisApp = this;
     thisApp.initData();
-    thisApp.initMenu();
+    // thisApp.initMenu();
+    thisApp.initPages();
+    thisApp.initHome();
   },
 
-  initMenu: function () {
+  initHome: function () {
     const thisApp = this;
-    for (let productData in thisApp.data.products) {
-      new Home(thisApp.data.products[productData].id, thisApp.data.products[productData]);
-    }
+
+    const homeWidget = document.querySelector(select.containerOf.home);
+    thisApp.Home= new Home(homeWidget);
   },
-
-  // initHome: function () {
-  //   const thisApp = this;
-
-  //   const homeWidget = document.querySelector(select.containerOf.home);
-  //   thisApp.Home= new Home(homeWidget);
-  // },
 };
 
 app.init(); 

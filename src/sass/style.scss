@@ -1,4 +1,3 @@
-// normalize default styles
 @import "_normalize";
 
 // Bootstrap
@@ -19,3 +18,7 @@
 @import "partials/media-query";
 @import "partials/contact";
 @import "partials/footer";
+
+.hidden {
+  display: none;
+}

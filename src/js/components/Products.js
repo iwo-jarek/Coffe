@@ -6,7 +6,6 @@ class Products {
     const thisProducts = this;
 
     thisProducts.render(element);
-    thisProducts.initWidgets();
   }
 
   render(element) {
@@ -14,8 +13,5 @@ class Products {
     thisProducts.dom = {};
     thisProducts.dom.wrapper = element;
   }
-
-
-
 }
 export default Products;

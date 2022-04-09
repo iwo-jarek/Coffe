@@ -2,20 +2,14 @@
   box-sizing: border-box;
 }
 
-
 .contact-wrapper {
   position: relative;
-  display: none;
-  width: 80%;
+  display: flex;
   flex-flow: column;
   align-items: center;
   padding: 20px;
-  margin: 5% auto 5% auto;
 }
 
-.active {
-  display: flex;
-}
 
 .wrapper-title {
   display: flex;
@@ -35,12 +29,10 @@
   position: relative;
   border: solid;
   z-index: 20;
-  // justify-content: center;
+  justify-content: center;
   color: $color-main;
   height: 3px;
-  width: 50%;
-  // left: 50%;
-  // transform: translateX(-50%);
+  width: 40%;
   margin-top: -15px;
 }
 
