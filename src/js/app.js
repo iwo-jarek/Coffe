@@ -1,4 +1,4 @@
-import { settings, select, activatePage } from './settings.js';
+import { select, activatePage } from './settings.js';
 import Home from './components/Home.js';
 // import Product from './components/Product.js';
 
@@ -10,9 +10,7 @@ const app = {
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
-
     const idFromHash = window.location.hash.replace('#/', '');
-
     let pageMatchingHash = thisApp.pages[0].id;
 
     for (let page of thisApp.pages) {
@@ -36,7 +34,7 @@ const app = {
         window.location.hash = '#' + id;
       });
     }
-    thisApp.activatePage('home');
+   
   },
 
   activatePage: function (pageId) {
@@ -59,28 +57,28 @@ const app = {
       else {
         page.classList.add('hidden');
       }
-
     }
   },
 
-  initData: function () {
-    const url = settings.db.url + '/';
-    this.data = {};
-    fetch(url)
-      .then((rawResponse) => {
-        return rawResponse.json();
-      })
-      .then((parsedResponse) => {
-        this.data.products = parsedResponse;
-      });
-  },
+  // initData: function () {
+  //   const url = settings.db.url + '/';
+  //   this.data = {};
+  //   fetch(url)
+  //     .then((rawResponse) => {
+  //       return rawResponse.json();
+  //     })
+  //     .then((parsedResponse) => {
+  //       this.data.products = parsedResponse;
+  //     });
+  // },
 
   init: function () {
     const thisApp = this;
-    thisApp.initData();
-    // thisApp.initMenu();
+    // thisApp.initData();
     thisApp.initPages();
     thisApp.initHome();
+    thisApp.activatePage('home');
+    
   },
 
   initHome: function () {
