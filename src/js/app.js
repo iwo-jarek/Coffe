@@ -1,6 +1,5 @@
 import { select, activatePage } from './settings.js';
 import Home from './components/Home.js';
-// import Product from './components/Product.js';
 
 const app = {
 
@@ -10,16 +9,16 @@ const app = {
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
-    const idFromHash = window.location.hash.replace('#/', '');
-    let pageMatchingHash = thisApp.pages[0].id;
+    // const idFromHash = window.location.hash.replace('#/', '');
+    // let pageMatchingHash = thisApp.pages[0].id;
 
-    for (let page of thisApp.pages) {
-      if (page.id == idFromHash) {
-        pageMatchingHash = page.id;
-        break;
-      }
-    }
-    thisApp.activatePage(pageMatchingHash);
+    // for (let page of thisApp.pages) {
+    //   if (page.id == idFromHash) {
+    //     pageMatchingHash = page.id;
+    //     break;
+    //   }
+    // }
+    // thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
       link.addEventListener('click', function (event) {
@@ -32,12 +31,17 @@ const app = {
         thisApp.activatePage(id);
         /* change URL hash */
         window.location.hash = '#' + id;
+        thisApp.activatePage();
       });
     }
    
   },
 
-  activatePage: function (pageId) {
+  activatePage: function () {
+    let pageId = window.location.hash.replace('#', '');
+    if(!pageId){
+      pageId ='home';
+    }
     const thisApp = this;
     let pagesToShow = [];
     if (pageId === 'home') {
@@ -60,24 +64,12 @@ const app = {
     }
   },
 
-  // initData: function () {
-  //   const url = settings.db.url + '/';
-  //   this.data = {};
-  //   fetch(url)
-  //     .then((rawResponse) => {
-  //       return rawResponse.json();
-  //     })
-  //     .then((parsedResponse) => {
-  //       this.data.products = parsedResponse;
-  //     });
-  // },
-
   init: function () {
     const thisApp = this;
     // thisApp.initData();
     thisApp.initPages();
     thisApp.initHome();
-    thisApp.activatePage('home');
+    thisApp.activatePage();
     
   },
 

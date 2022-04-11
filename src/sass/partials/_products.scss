@@ -49,18 +49,20 @@
 }
 
 .skill-image img {
-  width: 70%;
-  height: 70%;
+  // width: 100%;
+  // height: 100%;
   margin-top: 15px;
   margin-left: 15px;
   box-shadow: 0 0 20px 10px #9f9d9d;
   object-fit: cover;
 }
 
+
 .skill-right .skill-image {
   display: flex;
   float: right;
   justify-content: center;
+  height: 350px;
 }
 
 .skill-text {
@@ -75,6 +77,12 @@
   width: 15%;
 }
 
+.skill-right {
+  height: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .skill-right .skill-description {
   padding: 36px 55% 36px 0;
   text-align: left;
@@ -86,17 +94,26 @@
 
   p span {  
     font-weight: 800;
+    color: $color-main;
+    letter-spacing: 1px;
+  
   }
 }
 
 .skill-quality .col-sm-4 {
   margin-left: 120px;
+  
+}
+
+.skill-left {
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .skill-left .skill-image {
   display: flex;
   float: left;
-  margin-top: 20px;
 }
 
 .skill-left-quality {
@@ -105,13 +122,19 @@
 
   p span {  
     font-weight: 800;
+    color: $color-main;
+    letter-spacing: 1px;
   }
 }
 
 .skill-left .skill-left-description {
-  padding: 36px 0 36px 55%;
+
+  
+  //padding: 36px 0 36px 55%;
   text-align: left;
   margin-right: 15px;
+  margin-top: 50px;
+  
 }
 
 .skill-left-text {
