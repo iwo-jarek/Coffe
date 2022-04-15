@@ -96,7 +96,6 @@
     font-weight: 800;
     color: $color-main;
     letter-spacing: 1px;
-  
   }
 }
 
@@ -109,11 +108,13 @@
   height: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
 .skill-left .skill-image {
   display: flex;
   float: left;
+  
 }
 
 .skill-left-quality {
@@ -129,7 +130,7 @@
 
 .skill-left .skill-left-description {
 
-  
+
   padding: 36px 0 36px 55%;
   text-align: left;
   margin-right: 15px;

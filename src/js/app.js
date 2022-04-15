@@ -9,16 +9,6 @@ const app = {
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
-    // const idFromHash = window.location.hash.replace('#/', '');
-    // let pageMatchingHash = thisApp.pages[0].id;
-
-    // for (let page of thisApp.pages) {
-    //   if (page.id == idFromHash) {
-    //     pageMatchingHash = page.id;
-    //     break;
-    //   }
-    // }
-    // thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
       link.addEventListener('click', function (event) {
@@ -66,7 +56,6 @@ const app = {
 
   init: function () {
     const thisApp = this;
-    // thisApp.initData();
     thisApp.initPages();
     thisApp.initHome();
     thisApp.activatePage();

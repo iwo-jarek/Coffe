@@ -1,13 +1,78 @@
-// @media (max-width: 1800px) {
-//   .skill-right {
-//     max-height: 350px;
-//   }  
+@media (max-width: 991px) {
+  .header img {
+    position: relative;
 
-//   .skill-left {
-//     max-height: 350px;
-//   }  
+  }
 
-// //   .skill-description {
-    
-// //   }
-// }
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .products-title {
+    margin-top: 50px;
+  }
+
+  .skill-right {
+    display: flex;
+  }
+
+  .skill-image {
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .button {
+    display: block;
+    i {
+      display: none;
+    }
+  }
+
+  .skill-description {
+    display: flex;
+    margin: 0;
+    min-width: 100%;
+    margin: auto;
+
+    p {
+      font-size: 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    .power p {
+      font-size: 10px;
+    }
+  }
+
+  .skill-left-description {
+    display: block;
+    margin: 0;
+    min-width: 100%;
+
+    p {
+      font-size: 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    .power p {
+      font-size: 10px;
+    }
+  }
+}
