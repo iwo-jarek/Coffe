@@ -6,7 +6,9 @@
   [class^="skill-"] {
     position: relative;
   }
-
+  max-width: 1200px;
+  margin:0 auto;
+  display: block;
 }
 
 .products-title{
@@ -37,9 +39,9 @@
 
 .skill-container {
   position: relative;
-  max-width: fit-content;
-  padding: 50px;
-  margin: 20px;
+  justify-content: center;
+ padding: 40px;
+  
 }
 
 
