@@ -1,11 +1,9 @@
 @media (max-width: 991px) {
   .header img {
     position: relative;
-
   }
 
   .main-nav {
-    display: flex;
     flex-wrap: wrap;
   }
 
@@ -17,7 +15,8 @@
     padding-bottom: 20px;
   }
 
-  .products-title {
+  .products-title h1 {
+    display: flex;
     margin-top: 50px;
   }
 
@@ -34,6 +33,7 @@
 
   .button {
     display: block;
+
     i {
       display: none;
     }
