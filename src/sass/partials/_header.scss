@@ -4,31 +4,31 @@
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+}
+
 .container img {
   position: absolute;
   filter: brightness(45%);
   width: 97%;
-  height: 700px;
+  //height: 700px;
   z-index: 1;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .header-wrapper {
   position: relative;
   z-index: 2;
-  width: 100%;
-
 }
 
 .header-logo {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
-
+  justify-content: space-around;
   line-height: 20px;
   color: $color-light;
 }
@@ -36,7 +36,6 @@
 .logo__title {
   font-size: 20px;
   padding-top: 50px;
-  margin-left: 200px;
   letter-spacing: 5px;
   word-spacing: 1px;
   font-weight: bolder;
@@ -44,22 +43,10 @@
 
 .logo__subtitle {
   font-size: 10px;
-
-  margin-left: 200px;
   letter-spacing: 4px;
   word-spacing: 1px;
   font-weight: bold;
   font-family: $font-family;
-}
-
-.navigation {
-  padding-right: 30px;
-
-}
-
-.navigation-container{
-  width: 40%;
-  
 }
 
 .navigation ul {
@@ -68,7 +55,6 @@
   font-family: $font-family;
   font-weight: bold;
   margin-left: auto;
-  margin-right: 120px;
   line-height: 20px;
   word-spacing: 10px;
 }
@@ -84,50 +70,58 @@
 }
 
 .header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   font-size: 30px;
-  padding-top: 80px;
+  padding-top: 15%;
   font-family: $font-family;
   font-weight: 800;
 
   .row-one {
-    margin-bottom: -50px;
-    padding-right: 450px;
+    margin: 0;
+    padding-right: 20%;
     font-weight: 700;
     color: $color-main;
     letter-spacing: 4px;
   }
 
   .row-two {
+    margin: 0;
+    padding-left: 20%;
     z-index: 10;
     font-weight: 700;
     color: $color-main;
-    text-align: center;
-    margin-left: 60px;
     letter-spacing: 4px;
+  }
+
+
+  .header-line {
+    position: relative;
+    justify-content: center;
+    background-color: $color-main;
+    height: 5px;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
-.header-line {
-  position: relative;
-  justify-content: center;
-  background-color: $color-main;
-  height: 5px;
-  width: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.button .button-title {
-  position: relative;
+.button {
+  display: block;
+  justify-content: flex-end;
   color: $color-light;
   letter-spacing: 5px;
-  font-size: 25px;
   margin-bottom: 0;
-  padding-top: 180px;
+  padding-top: 10%;
+}
+
+.button-title {
+  font-size: 20px;
 }
 
 .button i {
   color: $color-light;
-  font-size: 25px;
+  font-size: 20px;
 }
